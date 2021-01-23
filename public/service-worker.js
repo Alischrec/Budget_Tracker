@@ -1,11 +1,10 @@
 const FILES_TO_CACHE = [
     "/",
-    "/public/index.html",
-    "/public/index.js",
-    "/public/db.js",
-    "/public/styles.css",
-    "/public/icons/icon-192x192.jpg",
-    "/public/icons/icon-512x512.jpg"
+    "/index.js",
+    "/db.js",
+    "/styles.css",
+    "/icons/icon-192x192.png",
+    "/icons/icon-512x512.png"
 
   ];
   
@@ -19,6 +18,7 @@ const FILES_TO_CACHE = [
         .open(STATIC_CACHE)
         .then(cache => cache.addAll(FILES_TO_CACHE))
         .then(() => self.skipWaiting())
+
     );
   });
   
@@ -56,12 +56,13 @@ const FILES_TO_CACHE = [
     }
   
     // handle runtime GET requests for data from /api routes
-    if (event.request.url.includes("/api/images")) {
+    if (event.request.url.includes("/api")) {
       // make network request and fallback to cache if network request fails (offline)
       event.respondWith(
         caches.open(RUNTIME_CACHE).then(cache => {
           return fetch(event.request)
-            .then(response => {
+            .then(async response => {
+                console.log(await response.json())
               cache.put(event.request, response.clone());
               return response;
             })
