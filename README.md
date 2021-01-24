@@ -19,21 +19,20 @@ Explore the [Project Page](https://github.com/Alischrec/Budget_Tracker)
 * [Acknowledgements](#acknowledgements)
 
 ## About the Project:
-<!-- The focus of this project was to build a Node CLI that acts as an active note taker app.  -->
+The focus of this project was to build a Budget Tracking Application that allows for offline access and functionality.
 
-<!-- ![Project Gif](gif.gif) -->
+![Project Gif](gif.gif)
 
-<!-- ### JavaScript:
-* [index.js](https://github.com/Alischrec/Budget_Tracker/blob/main/index.js)
-* [notes.js](https://github.com/Alischrec/Budget_Tracker/blob/main/notes.js) -->
+### JavaScript:
+* [index.js](https://github.com/Alischrec/Budget_Tracker/tree/main/public/index.js)
+* [server.js](https://github.com/Alischrec/Budget_Tracker/blob/main/server.js)
 
-<!-- ### Assets:
-* [CSS](https://github.com/Alischrec/Budget_Tracker/tree/main/public/assets/css)
-* [JS](https://github.com/Alischrec/Budget_Tracker/tree/main/public/assets/js)
-* [Database](https://github.com/Alischrec/Budget_Tracker/tree/main/db) -->
+### Assets:
+* [CSS](https://github.com/Alischrec/Budget_Tracker/tree/main/public/styles.css)
+* [Database](https://github.com/Alischrec/Budget_Tracker/tree/main/public/db.js)
 
 ### Built With:
-<!-- * This app is build upon [Node.js](https://nodejs.org/en/), [Express package](https://expressjs.com/), and the [Heroku](https://dashboard.heroku.com/apps) application. -->
+* This app is build upon [Node.js](https://nodejs.org/en/), [Express package](https://expressjs.com/), [Mongoose](https://www.mongodb.com/cloud/atlas), and the [Heroku](https://dashboard.heroku.com/apps) application.
 
 ## Getting Started:
 To get a local copy up and running follow the steps below.
